@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3DD6AE4F1CF7B72200400C6C /* FrameworkTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD6AE4E1CF7B72200400C6C /* FrameworkTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD6AE571CF7B83D00400C6C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6AE561CF7B83D00400C6C /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DD6AE4B1CF7B72200400C6C /* FrameworkTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD6AE4E1CF7B72200400C6C /* FrameworkTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkTest.h; sourceTree = "<group>"; };
 		3DD6AE501CF7B72200400C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD6AE561CF7B83D00400C6C /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				3DD6AE4E1CF7B72200400C6C /* FrameworkTest.h */,
 				3DD6AE501CF7B72200400C6C /* Info.plist */,
+				3DD6AE561CF7B83D00400C6C /* HelloWorld.swift */,
 			);
 			path = FrameworkTest;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD6AE571CF7B83D00400C6C /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		3DD6AE541CF7B72200400C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -237,15 +242,18 @@
 				INFOPLIST_FILE = FrameworkTest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.safetyculture.FrameworkTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3DD6AE551CF7B72200400C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
