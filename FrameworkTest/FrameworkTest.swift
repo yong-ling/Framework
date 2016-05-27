@@ -8,8 +8,8 @@
 
 import Foundation
 
-@objc public class HelloWorld: NSObject {
-    func hello(world: String) -> String {
+@objc public class FrameworkTest: NSObject {
+    public func hello(world: String) -> String {
         print(world)
         return "Job done."
     }
